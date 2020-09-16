@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{092D3646-EEB4-41E5-839C-1E2047EAE6BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AudioBook</RootNamespace>
+    <AssemblyName>AudioBook</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AboutSpeechToTextForm.cs" />
+    <Compile Include="Forms\AboutSpeechToTextForm.Designer.cs">
+      <DependentUpon>AboutSpeechToTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutTextToSpeechForm.cs" />
+    <Compile Include="Forms\AboutTextToSpeechForm.Designer.cs">
+      <DependentUpon>AboutTextToSpeechForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutUsForm.cs" />
+    <Compile Include="Forms\AboutUsForm.Designer.cs">
+      <DependentUpon>AboutUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HelpForm.cs" />
+    <Compile Include="Forms\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeForm.cs" />
+    <Compile Include="Forms\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SpeechToTextForm.cs" />
+    <Compile Include="Forms\SpeechToTextForm.Designer.cs">
+      <DependentUpon>SpeechToTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TextToSpeechForm.cs" />
+    <Compile Include="Forms\TextToSpeechForm.Designer.cs">
+      <DependentUpon>TextToSpeechForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\x64\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x64\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x64\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AboutSpeechToTextForm.resx">
+      <DependentUpon>AboutSpeechToTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutTextToSpeechForm.resx">
+      <DependentUpon>AboutTextToSpeechForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutUsForm.resx">
+      <DependentUpon>AboutUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpeechToTextForm.resx">
+      <DependentUpon>SpeechToTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TextToSpeechForm.resx">
+      <DependentUpon>TextToSpeechForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\AudioBook.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\audio book.vshost.exe.config" />
+    <None Include="bin\Debug\audio book.vshost.exe.manifest" />
+    <None Include="bin\Debug\audiobook.exe.config" />
+    <None Include="bin\Debug\AudioBook.vshost.exe.config" />
+    <None Include="obj\Debug\AudioBook.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\audiobook.csproj.ResolveComReference.cache" />
+    <None Include="obj\Debug\AudioBook.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x64\Debug\audiobook.csproj.ResolveComReference.cache" />
+    <None Include="obj\x64\Debug\build.force" />
+    <None Include="obj\x64\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="audiobook.csproj.user" />
+    <Content Include="bin\Debug\audiobook.exe" />
+    <Content Include="bin\Debug\AudioBook.pdb" />
+    <Content Include="bin\Debug\AudioBook.vshost.exe" />
+    <Content Include="obj\Debug\audiobook.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\AudioBook.exe" />
+    <Content Include="obj\Debug\AudioBook.pdb" />
+    <Content Include="obj\Debug\Interop.SpeechLib.dll" />
+    <Content Include="obj\Debug\TempPE\Service References.translate.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TextTemplate1.txt.dll" />
+    <Content Include="obj\x64\Debug\audiobook.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x64\Debug\Interop.SpeechLib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\x64\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
